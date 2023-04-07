@@ -1,2 +1,7 @@
 com/example/demo/DemoApplication.class
+com/example/demo/Repository/EmployeeRepository.class
+com/example/demo/Controller/EmployeeController.class
+com/example/demo/Config/WebConfig.class
+com/example/demo/Service/EmployeeService.class
+com/example/demo/POJO/Employee.class
 com/example/demo/Controller/BasicController.class

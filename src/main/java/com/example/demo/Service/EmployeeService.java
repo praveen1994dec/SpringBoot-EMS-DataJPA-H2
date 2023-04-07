@@ -41,7 +41,7 @@ public class EmployeeService {
 		}
 
 		employeeRepository.deleteById(id);
-		return "Deleted: " + emp.getName();
+		return "Deleted Employee: " + emp.getName();
 	}
 
 }
