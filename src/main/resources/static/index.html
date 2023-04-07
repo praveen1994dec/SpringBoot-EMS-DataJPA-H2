@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>EMS</title>
+	</head>
+	<body>
+		<h1>EMS</h1>
+		
+		<form action="/add" method="post">
+		    <fieldset>
+		    <legend>Add Employee</legend>
+		     <p> Employee Name <input type = "text" name = "ename"/></p>
+		     <p> Employee Designation <input type = "text" name = "designation"/></p>
+		     <p> Employee Location <input type = "text" name = "location"/></p>
+		 	 <p> <input type = "submit" name = "submit" value = "Add"/></p>
+			</fieldset>
+		</form>
+	     
+	     <form action="/update" method="post">
+			<fieldset>
+		    <legend>Update Employee</legend>
+	        <p>Employee Name <input type="text" name="name"></p>
+	        <p>Employee Designation <input type = "text" name = "designation"/></p>
+		    <p>Employee Location <input type = "text" name = "location"/></p>
+	        <p><input type="submit" value="Update"></p>
+			</fieldset>
+	    </form>
+	    
+	    <form action="/delete" method="get">
+			<fieldset>
+		    <legend>Delete Employee</legend>
+	        <p>Employee Name: <input type="text" name="name"></p>
+	        <p><input type="submit" value="Delete"></p>
+			</fieldset>
+	    </form>
+	    
+	    <form action="/list" method="get">
+			<fieldset>
+		    <legend>List Employees</legend>
+	        <p><input type="submit" value="List"></p>
+			</fieldset>
+	    </form>
+    </body>
+</html>
