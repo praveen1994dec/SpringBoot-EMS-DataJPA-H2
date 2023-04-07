@@ -22,6 +22,7 @@ public class EmployeeService {
 		return employeeRepository.findAll();
 	}
 
+	@SuppressWarnings("deprecation")
 	public Employee getEmployeeById(Long id) {
 		
 		Employee emp = employeeRepository.getById(id);
@@ -34,6 +35,7 @@ public class EmployeeService {
 
 	public String deleteEmployeeById(Long id) {
 
+		@SuppressWarnings("deprecation")
 		Employee emp = employeeRepository.getById(id);
 
 		if (emp == null) {
@@ -41,7 +43,7 @@ public class EmployeeService {
 		}
 
 		employeeRepository.deleteById(id);
-		return "Deleted Employee: " + emp.getName();
+		return "Deleted Employee sucesfully...";
 	}
 
 }
